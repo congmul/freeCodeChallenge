@@ -1,0 +1,99 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #ebe8e8;
+    margin: auto;
+}
+#header{
+    position: fixed;
+    top: 0;     /*Position the header at the top of the page */
+    min-height: 75px;
+    padding: 0px 20px;
+    width: 100%;                    /* When I put 100% of width Header's right position is -40 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #ebe8e8;
+}
+#img{
+    width: 55vw;
+    text-align: left;
+}
+
+nav{
+    display: block;    
+}
+
+ul a:link{
+    text-decoration: none;
+    color: black;
+}
+
+ul a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+ul a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+ul a:active{
+    text-decoration: none;
+    color: black;
+}
+
+
+ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;  /* Making CSS Remove Bullets */
+}
+
+H1{
+    font-size: 24px;
+}
+.form-control{
+    min-width: 300px;
+    min-height: 18px;
+    padding: 3px;
+    margin: 10px;
+}
+
+#firstLine input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+#firstLine{
+    margin-top: 100px;
+    height: 200px;
+}
+
+#secondLine{
+}
+
+#footer{
+}
+
+
