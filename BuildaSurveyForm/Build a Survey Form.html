@@ -2,17 +2,73 @@
 #body{
     background: pink;
     }
+    
 #title{
     text-align: center;
     font-family: arial;
     padding-top: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
 }
 #description{
     text-align: center;
     font-family: arial;
     padding-bottom: 20px;
 }
+.form-group{
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding:0.375rem 0.75rem;
+    color: #495057;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    /* trasition: border-color 0.15s */
+}
+.input-radio{
+    display: inlne-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+.input-checkbox{
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+.input-textarea{
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
 
+form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem;
+    border-radius: 0.25rem;
+    display: block;
+    margin-top: 0em;
+}
 #survey-form{
     font-family: arial;
     font-size: 18px;
@@ -50,27 +106,28 @@ input {
 </style>
 
 <body id="body">
+    <div class="container">
 <h1 id="title">freeCodeCamp Survey From</h1>
 <p id="description">Thank you for taking the time to help us improve the platform</p>
 <form id="survey-form">
     <div class="form-group">
-    <label id="name-label" for="text">Name</label><br>
-    <input type="text" id="name" name="name" value="name" placeholder="Enter your name" required><br><br>
+    <label id="name-label" for="name">Name</label><br>
+    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required><br><br>
 </div>
 <div class="form-group">
     <label id="email-label" for="email">Email</label><br>
-    <input type="email" id="email" name="email" value="email" placeholder="Enter your Email" required><br><br>
+    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email" required><br><br>
 </div>
 <div class="form-group">
     <label id="number-label" for="number">Age</label><br>
-    <input type="number" id="number" name="number" value="number" placeholder="Age" min="5" max="99" required><br><br>
+    <input type="number" id="number" name="number" class="form-control" placeholder="Age" min="5" max="99" required><br><br>
 </div>
 
 <div class="form-group">
     <label id="radio-label" for="radio-label">Would you recommend freeCodeCamp to a friend?</label><br>
-    <input type="radio"  id="radio-label" name="radio-label" value="Definitely"><label id="radio-label" for="radio">Definitely</label><br>
-    <input type="radio" id="radio-label" name="radio-label" value="Maybe"><label id="radio-label" for="radio">Maybe</label><br>
-    <input type="radio" id="radio-label" name="radio-label" value="Notsure"><label id="radio-label" for="radio">Not sure</label><br><br>
+    <input type="radio" name="radio-label" value="Definitely" class="input-radio" checked><label id="radio-label" for="radio">Definitely</label><br>
+    <input type="radio" name="radio-label" value="Maybe" class="input-radio"><label id="radio-label" for="radio">Maybe</label><br>
+    <input type="radio" name="radio-label" value="Notsure" class="input-radio"><label id="radio-label" for="radio">Not sure</label><br><br>
 </div>
 
 <div class="form-group">
@@ -86,16 +143,17 @@ input {
 
 <div class="form-group">
     <label id="checkbox" for="checkbox">What would you like to see improved? (Check all that apply)</label><br>
-    <input type="checkbox" id="checkbox" name="checkbox"><label id="checkbox" for="checkbox">Front-end Projects</label><br>
-    <input type="checkbox" id="checkbox" name="checkbox"><label id="checkbox" for="checkbox">Back-end Projects</label><br><br>
+    <input type="checkbox" value="Front-end Projects" name="checkbox" class="input-checkbox" checked><label id="checkbox" for="checkbox">Front-end Projects</label><br>
+    <input type="checkbox" value="Back-end Projects" name="checkbox" class="input-checkbox" ><label id="checkbox" for="checkbox">Back-end Projects</label><br><br>
 </div>
 <div class="form-group">
     <label id="textarea" for="textarea">Any comments or suggestions?</label><br>
-    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea><br><br>
+    <textarea id="comments" class="input-textarea" name="comment" class="input-textarea" placeholder="Enter your comment here..."></textarea><br><br>
 </div>
 
     <input type="submit" id="submit" name="submit"><br>
 
 
 </form>
+</div>
 </body>
