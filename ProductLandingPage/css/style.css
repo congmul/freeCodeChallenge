@@ -9,7 +9,6 @@ body {
     top: 0;     /*Position the header at the top of the page */
     min-height: 75px;
     padding: 0px 20px;
-    width: 100%;                    /* When I put 100% of width Header's right position is -40 */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -91,6 +90,26 @@ H1{
 }
 
 #secondLine{
+    text-align: left;
+    width: 100%;
+    display: flex;
+    margin: 30px;
+    min-height: 75px;
+    /* flex-direction: row;
+    justify-content: space-around; */
+}
+
+@media video{
+    }
+
+#img01{
+    margin: 20px;
+    align-items: center;
+}
+#p01{
+    /* margin-right: 80px; */
+    align-items: center;
+    width: 70vw;
 }
 
 #footer{
